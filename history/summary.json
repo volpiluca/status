@@ -23,11 +23,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/billing.fluxservice.it.ico",
     "slug": "billing",
     "status": "down",
-    "uptime": "2.23%",
-    "uptimeDay": "2.23%",
-    "uptimeWeek": "2.23%",
-    "uptimeMonth": "2.23%",
-    "uptimeYear": "2.23%",
+    "uptime": "2.16%",
+    "uptimeDay": "2.16%",
+    "uptimeWeek": "2.16%",
+    "uptimeMonth": "2.16%",
+    "uptimeYear": "2.16%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -61,18 +61,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/node.fluxservice.it.ico",
     "slug": "node-01",
     "status": "up",
-    "uptime": "3.29%",
-    "uptimeDay": "3.29%",
-    "uptimeWeek": "3.29%",
-    "uptimeMonth": "3.29%",
-    "uptimeYear": "3.29%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 1260,
     "timeDay": 1260,
     "timeWeek": 1260,
     "timeMonth": 1260,
     "timeYear": 1260,
-    "dailyMinutesDown": {
-      "2026-07-22": 10
-    }
+    "dailyMinutesDown": {}
   }
 ]
