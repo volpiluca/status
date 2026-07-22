@@ -1,7 +1,7 @@
-url: https://node.fluxservice.it
-status: down
-code: 401
-responseTime: 1271
-lastUpdated: 2026-07-22T14:40:58.558Z
+url: https://node.fluxservice.it/api/system
+status: up
+code: 200
+responseTime: 1249
+lastUpdated: 2026-07-22T14:50:45.872Z
 startTime: 2026-07-22T14:40:42.733Z
 generator: Upptime <https://github.com/upptime/upptime>
