@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 812,
-    "timeDay": 812,
-    "timeWeek": 812,
-    "timeMonth": 812,
-    "timeYear": 812,
+    "time": 884,
+    "timeDay": 884,
+    "timeWeek": 884,
+    "timeMonth": 884,
+    "timeYear": 884,
     "dailyMinutesDown": {}
   },
   {
@@ -23,19 +23,17 @@
     "icon": "https://icons.duckduckgo.com/ip3/billing.fluxservice.it.ico",
     "slug": "billing",
     "status": "up",
-    "uptime": "0.41%",
-    "uptimeDay": "0.41%",
-    "uptimeWeek": "0.41%",
-    "uptimeMonth": "0.41%",
-    "uptimeYear": "0.41%",
-    "time": 1701,
-    "timeDay": 1701,
-    "timeWeek": 1701,
-    "timeMonth": 1701,
-    "timeYear": 1701,
-    "dailyMinutesDown": {
-      "2026-07-22": 75
-    }
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 1518,
+    "timeDay": 1518,
+    "timeWeek": 1518,
+    "timeMonth": 1518,
+    "timeYear": 1518,
+    "dailyMinutesDown": {}
   },
   {
     "name": "Sito",
@@ -48,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 389,
-    "timeDay": 389,
-    "timeWeek": 389,
-    "timeMonth": 389,
-    "timeYear": 389,
+    "time": 382,
+    "timeDay": 382,
+    "timeWeek": 382,
+    "timeMonth": 382,
+    "timeYear": 382,
     "dailyMinutesDown": {}
   },
   {
@@ -66,11 +64,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1260,
-    "timeDay": 1260,
-    "timeWeek": 1260,
-    "timeMonth": 1260,
-    "timeYear": 1260,
+    "time": 1094,
+    "timeDay": 1094,
+    "timeWeek": 1094,
+    "timeMonth": 1094,
+    "timeYear": 1094,
     "dailyMinutesDown": {}
   }
 ]
