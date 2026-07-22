@@ -22,19 +22,19 @@
     "url": "https://billing.fluxservice.it",
     "icon": "https://icons.duckduckgo.com/ip3/billing.fluxservice.it.ico",
     "slug": "billing",
-    "status": "down",
-    "uptime": "2.16%",
-    "uptimeDay": "2.16%",
-    "uptimeWeek": "2.16%",
-    "uptimeMonth": "2.16%",
-    "uptimeYear": "2.16%",
-    "time": 0,
-    "timeDay": 0,
-    "timeWeek": 0,
-    "timeMonth": 0,
-    "timeYear": 0,
+    "status": "up",
+    "uptime": "0.41%",
+    "uptimeDay": "0.41%",
+    "uptimeWeek": "0.41%",
+    "uptimeMonth": "0.41%",
+    "uptimeYear": "0.41%",
+    "time": 1701,
+    "timeDay": 1701,
+    "timeWeek": 1701,
+    "timeMonth": 1701,
+    "timeYear": 1701,
     "dailyMinutesDown": {
-      "2026-07-22": 10
+      "2026-07-22": 75
     }
   },
   {
