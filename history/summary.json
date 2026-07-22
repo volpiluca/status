@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 956,
-    "timeDay": 956,
-    "timeWeek": 956,
-    "timeMonth": 956,
-    "timeYear": 956,
+    "time": 812,
+    "timeDay": 812,
+    "timeWeek": 812,
+    "timeMonth": 812,
+    "timeYear": 812,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/billing.fluxservice.it.ico",
     "slug": "billing",
     "status": "down",
-    "uptime": "33.44%",
-    "uptimeDay": "33.44%",
-    "uptimeWeek": "33.44%",
-    "uptimeMonth": "33.44%",
-    "uptimeYear": "33.44%",
+    "uptime": "2.23%",
+    "uptimeDay": "2.23%",
+    "uptimeWeek": "2.23%",
+    "uptimeMonth": "2.23%",
+    "uptimeYear": "2.23%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-07-22": 0
+      "2026-07-22": 10
     }
   },
   {
@@ -48,31 +48,31 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 407,
-    "timeDay": 407,
-    "timeWeek": 407,
-    "timeMonth": 407,
-    "timeYear": 407,
+    "time": 389,
+    "timeDay": 389,
+    "timeWeek": 389,
+    "timeMonth": 389,
+    "timeYear": 389,
     "dailyMinutesDown": {}
   },
   {
     "name": "Node 01",
-    "url": "https://node.fluxservice.it",
+    "url": "https://node.fluxservice.it/api/system",
     "icon": "https://icons.duckduckgo.com/ip3/node.fluxservice.it.ico",
     "slug": "node-01",
-    "status": "down",
-    "uptime": "62.12%",
-    "uptimeDay": "62.12%",
-    "uptimeWeek": "62.12%",
-    "uptimeMonth": "62.12%",
-    "uptimeYear": "62.12%",
-    "time": 1271,
-    "timeDay": 1271,
-    "timeWeek": 1271,
-    "timeMonth": 1271,
-    "timeYear": 1271,
+    "status": "up",
+    "uptime": "3.29%",
+    "uptimeDay": "3.29%",
+    "uptimeWeek": "3.29%",
+    "uptimeMonth": "3.29%",
+    "uptimeYear": "3.29%",
+    "time": 1260,
+    "timeDay": 1260,
+    "timeWeek": 1260,
+    "timeMonth": 1260,
+    "timeYear": 1260,
     "dailyMinutesDown": {
-      "2026-07-22": 0
+      "2026-07-22": 10
     }
   }
 ]
