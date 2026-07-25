@@ -58,17 +58,17 @@
     "url": "https://node.fluxservice.it/api/system",
     "icon": "https://icons.duckduckgo.com/ip3/node.fluxservice.it.ico",
     "slug": "node-01",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 793,
-    "timeDay": 591,
-    "timeWeek": 793,
-    "timeMonth": 793,
-    "timeYear": 793,
+    "time": 717,
+    "timeDay": 390,
+    "timeWeek": 717,
+    "timeMonth": 717,
+    "timeYear": 717,
     "dailyMinutesDown": {}
   }
 ]
