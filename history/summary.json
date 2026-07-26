@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 964,
-    "timeDay": 888,
-    "timeWeek": 964,
-    "timeMonth": 964,
-    "timeYear": 964,
+    "time": 976,
+    "timeDay": 1060,
+    "timeWeek": 976,
+    "timeMonth": 976,
+    "timeYear": 976,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1489,
-    "timeDay": 1167,
-    "timeWeek": 1489,
-    "timeMonth": 1489,
-    "timeYear": 1489,
+    "time": 1469,
+    "timeDay": 1352,
+    "timeWeek": 1469,
+    "timeMonth": 1469,
+    "timeYear": 1469,
     "dailyMinutesDown": {}
   },
   {
@@ -46,11 +46,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 290,
-    "timeDay": 249,
-    "timeWeek": 290,
-    "timeMonth": 290,
-    "timeYear": 290,
+    "time": 288,
+    "timeDay": 274,
+    "timeWeek": 288,
+    "timeMonth": 288,
+    "timeYear": 288,
     "dailyMinutesDown": {}
   },
   {
@@ -59,16 +59,19 @@
     "icon": "https://icons.duckduckgo.com/ip3/node.fluxservice.it.ico",
     "slug": "node-01",
     "status": "down",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 717,
-    "timeDay": 390,
-    "timeWeek": 717,
-    "timeMonth": 717,
-    "timeYear": 717,
-    "dailyMinutesDown": {}
+    "uptime": "73.46%",
+    "uptimeDay": "7.10%",
+    "uptimeWeek": "73.46%",
+    "uptimeMonth": "73.46%",
+    "uptimeYear": "73.46%",
+    "time": 667,
+    "timeDay": 228,
+    "timeWeek": 667,
+    "timeMonth": 667,
+    "timeYear": 667,
+    "dailyMinutesDown": {
+      "2026-07-26": 161,
+      "2026-07-25": 1177
+    }
   }
 ]
