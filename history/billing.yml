@@ -1,7 +1,7 @@
 url: https://billing.fluxservice.it
-status: up
-code: 200
-responseTime: 947
-lastUpdated: 2026-07-31T23:56:09.101Z
+status: down
+code: 523
+responseTime: 3288
+lastUpdated: 2026-08-01T04:40:35.125Z
 startTime: 2026-07-22T14:40:25.862Z
 generator: Upptime <https://github.com/upptime/upptime>
