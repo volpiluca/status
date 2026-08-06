@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/panel.fluxservice.it.ico",
     "slug": "pannello",
     "status": "down",
-    "uptime": "98.37%",
-    "uptimeDay": "98.66%",
-    "uptimeWeek": "96.64%",
-    "uptimeMonth": "98.37%",
-    "uptimeYear": "98.37%",
+    "uptime": "97.97%",
+    "uptimeDay": "92.80%",
+    "uptimeWeek": "95.80%",
+    "uptimeMonth": "97.97%",
+    "uptimeYear": "97.97%",
     "time": 2634,
     "timeDay": 13310,
     "timeWeek": 3900,
@@ -19,7 +19,7 @@
       "2026-08-01": 256,
       "2026-08-02": 63,
       "2026-08-05": 17,
-      "2026-08-06": 2
+      "2026-08-06": 86
     }
   },
   {
@@ -28,11 +28,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/billing.fluxservice.it.ico",
     "slug": "billing",
     "status": "down",
-    "uptime": "93.50%",
-    "uptimeDay": "98.82%",
-    "uptimeWeek": "86.61%",
-    "uptimeMonth": "93.50%",
-    "uptimeYear": "93.50%",
+    "uptime": "93.13%",
+    "uptimeDay": "92.96%",
+    "uptimeWeek": "85.77%",
+    "uptimeMonth": "93.13%",
+    "uptimeYear": "93.13%",
     "time": 2625,
     "timeDay": 13508,
     "timeWeek": 3478,
@@ -42,7 +42,7 @@
       "2026-08-01": 357,
       "2026-08-02": 977,
       "2026-08-05": 16,
-      "2026-08-06": 1
+      "2026-08-06": 85
     }
   },
   {
@@ -69,11 +69,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/node.fluxservice.it.ico",
     "slug": "node-01",
     "status": "down",
-    "uptime": "77.88%",
+    "uptime": "77.97%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "77.88%",
-    "uptimeYear": "77.88%",
+    "uptimeMonth": "77.97%",
+    "uptimeYear": "77.97%",
     "time": 648,
     "timeDay": 372,
     "timeWeek": 804,
