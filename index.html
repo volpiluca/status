@@ -1,26 +1,909 @@
-<!DOCTYPE html> <html lang=en> <head> <meta charset=utf-8> <meta content="width=device-width,initial-scale=1" name=viewport> <meta content=#333333 name=theme-color> <base href=/ > <link href=manifest.json rel=manifest crossorigin=use-credentials> <script>__SAPPER__={baseUrl:"",preloaded:[void 0,{}]};if('serviceWorker' in navigator)navigator.serviceWorker.register('/service-worker.js');(function(){try{eval("async function x(){}");var main="/client/client.7313cf70.js"}catch(e){main="/client/legacy/client.212cee00.js"};var s=document.createElement("script");try{new Function("if(0)import('')")();s.src=main;s.type="module";s.crossOrigin="use-credentials";}catch(e){s.src="/client/shimport@2.0.5.js";s.setAttribute("data-main",main);}document.head.appendChild(s);}());</script> <link href=client/client-31a52aa5.css rel=stylesheet><link href=client/createOctokit-a85f76c7.css rel=stylesheet><link href=client/index-b0b6455a.css rel=stylesheet> <title>FluxService</title> <script>// If `prefers-color-scheme` is not supported, fall back to light mode.
-      // In this case, light.css will be downloaded with `highest` priority.
-      if (typeof window !== "undefined" && typeof document !== "undefined" && "matchMedia" in window && window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-        document.documentElement.style.display = 'none';
-        document.head.insertAdjacentHTML(
-          'beforeend',
-          '<link rel="stylesheet" href={`${config.path}/themes/light.css`} onload="document.documentElement.style.display = \'\'">',
-        );
-      } </script> <link href=https://status.fluxservice.it/themes/light.css rel=stylesheet media=(prefers-color-scheme:light)> <link href=https://status.fluxservice.it/themes/dark.css rel=stylesheet media=(prefers-color-scheme:dark)><link href=https://status.fluxservice.it/global.css rel=stylesheet><link href=https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg rel=icon type=image/svg><link href=/logo-192.png rel=icon type=image/png> <link href=/client/client.7313cf70.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/client-31a52aa5.css rel=preload as=style><link href=/client/index.02afcb43.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit.edd9b209.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/inject_styles.803b7e80.js rel=modulepreload as=script crossorigin=use-credentials><link href=/client/createOctokit-a85f76c7.css rel=preload as=style><link href=/client/index-b0b6455a.css rel=preload as=style></head> <body> <div id=sapper> <nav class=svelte-a08hsz><div class="svelte-a08hsz container"><div><a href=https://status.fluxservice.it class="svelte-a08hsz logo"><img alt="" class=svelte-a08hsz src=https://i.ibb.co/S4DKZGpN/Flux-Logo.png> <div>FluxService</div></a></div> <ul class=svelte-a08hsz> </ul></div> </nav> <main class=container> <header class=svelte-ngkazm> </header> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section class=svelte-8lnl4f><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <div class="svelte-fqsq6s f changed"><h2>Live Status</h2> <form class="svelte-fqsq6s f r"><div><input class=svelte-fqsq6s id=data_day name=d type=radio value=day><label class=svelte-fqsq6s for=data_day>24h</label></div> <div><input class=svelte-fqsq6s id=data_week name=d type=radio value=week checked><label class=svelte-fqsq6s for=data_week>7d</label></div> <div><input class=svelte-fqsq6s id=data_month name=d type=radio value=month><label class=svelte-fqsq6s for=data_month>30d</label></div> <div><input class=svelte-fqsq6s id=data_year name=d type=radio value=year><label class=svelte-fqsq6s for=data_year>1y</label></div> <div><input class=svelte-fqsq6s id=data_all name=d type=radio value=all><label class=svelte-fqsq6s for=data_all>all</label></div></form></div> <section class="svelte-fqsq6s live-status"><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div> </section> <section><div class="svelte-68jxue loading"><svg class=svelte-68jxue height=38 stroke=#aaa width=38 xmlns=http://www.w3.org/2000/svg><g fill=none fill-rule=evenodd><g stroke-width=2 transform="translate(1 1)"><circle cx=18 cy=18 r=18 stroke-opacity=.5></circle><path d="M36 18c0-9.94-8.06-18-18-18"><animateTransform attributeName=transform dur=1s from="0 18 18" repeatCount=indefinite to="360 18 18" type=rotate></animateTransform></path></g></g></svg></div></section></main> <footer class=svelte-jbr799><p>This page is <a href=https://github.com/volpiluca/status>open source</a>, powered by <a href=https://upptime.js.org>Upptime</a></p> </footer></div> <script> try {
-        if (typeof window !== "undefined" && window.navigator && navigator.serviceWorker) {
-          navigator.serviceWorker.getRegistrations().then(function (registrations) {
-            for (let registration of registrations) {
-              registration.unregister();
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>FluxService - Status dei Sistemi</title>
+  <meta content="Stato operativo in tempo reale dell'infrastruttura, server, nodi di calcolo e piattaforme web di FluxService." name="description">
+  <link rel="icon" type="image/png" href="https://i.ibb.co/S4DKZGpN/Flux-Logo.png">
+
+  <!-- Google Fonts: Material Symbols & Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    .timeline-bar {
+      transition: transform 0.15s ease, opacity 0.15s ease;
+      cursor: pointer;
+    }
+    .timeline-bar:hover {
+      transform: scaleY(1.25);
+      opacity: 0.85;
+      z-index: 10;
+    }
+    #floating-tooltip {
+      pointer-events: none;
+      transition: opacity 0.15s ease;
+    }
+  </style>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary": "#545f73",
+            "on-primary-fixed": "#00174c",
+            "error": "#ba1a1a",
+            "primary-fixed-dim": "#b4c5ff",
+            "on-primary-fixed-variant": "#003da9",
+            "outline-variant": "#c3c6d7",
+            "surface-dim": "#d2d9f4",
+            "on-tertiary-container": "#c5d6f0",
+            "on-error-container": "#93000a",
+            "surface-variant": "#dae2fd",
+            "error-container": "#ffdad6",
+            "primary-fixed": "#dbe1ff",
+            "surface-container-highest": "#dae2fd",
+            "on-error": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container": "#eaedff",
+            "secondary-fixed": "#d8e3fb",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#faf8ff",
+            "secondary-fixed-dim": "#bcc7de",
+            "inverse-primary": "#b4c5ff",
+            "surface-tint": "#0953da",
+            "on-surface": "#131b2e",
+            "on-primary": "#ffffff",
+            "secondary-container": "#d5e0f8",
+            "on-background": "#131b2e",
+            "outline": "#737686",
+            "primary": "#003ba4",
+            "on-tertiary-fixed": "#0b1c30",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#434654",
+            "background": "#faf8ff",
+            "surface": "#faf8ff",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "inverse-surface": "#283044",
+            "on-secondary-fixed-variant": "#3c475a",
+            "inverse-on-surface": "#eef0ff",
+            "primary-container": "#0050d7",
+            "tertiary-container": "#4d5d73",
+            "tertiary-fixed": "#d3e4fe",
+            "surface-container-low": "#f2f3ff",
+            "on-tertiary-fixed-variant": "#38485d",
+            "on-secondary-fixed": "#111c2d",
+            "on-primary-container": "#c8d3ff",
+            "tertiary": "#36455b",
+            "surface-container-high": "#e2e7ff",
+            "on-secondary-container": "#586377"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "margin-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin": "2rem"
+          },
+          fontFamily: {
+            "headline-md": ["Inter", "sans-serif"],
+            "label-md": ["Inter", "sans-serif"],
+            "body-sm": ["Inter", "sans-serif"],
+            "headline-lg": ["Inter", "sans-serif"],
+            "display-mobile": ["Inter", "sans-serif"],
+            "body-md": ["Inter", "sans-serif"],
+            "label-sm": ["Inter", "sans-serif"],
+            "display": ["Inter", "sans-serif"],
+            "headline-sm": ["Inter", "sans-serif"],
+            "body-lg": ["Inter", "sans-serif"],
+            "headline-lg-mobile": ["Inter", "sans-serif"]
+          },
+          fontSize: {
+            "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "label-md": ["13px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }],
+            "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "display-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "600" }],
+            "display": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "700" }],
+            "headline-sm": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Floating Tooltip for Segmented Bars -->
+  <div id="floating-tooltip" class="fixed opacity-0 z-50 bg-inverse-surface text-inverse-on-surface px-3 py-1.5 rounded-lg text-xs font-medium shadow-xl pointer-events-none transform -translate-x-1/2 -translate-y-full border border-white/10">
+    <div id="tooltip-text">Uptime: 100%</div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="w-full bg-surface-container-lowest/80 backdrop-blur-md border-b border-surface-container sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-margin py-3.5 flex items-center justify-between">
+      <a href="https://fluxservice.it" target="_blank" rel="noopener noreferrer" class="flex items-center gap-space-sm group">
+        <img src="https://i.ibb.co/S4DKZGpN/Flux-Logo.png" alt="FluxService Logo" class="h-8 w-auto">
+        <div class="flex items-center gap-2">
+          <span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight group-hover:text-primary transition-colors">FluxService</span>
+          <span class="px-2 py-0.5 text-[11px] font-semibold bg-surface-container text-on-surface-variant rounded-md">Status</span>
+        </div>
+      </a>
+      <div class="flex items-center gap-space-md">
+        <a href="https://billing.fluxservice.it" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-primary text-label-md font-medium transition-colors hidden sm:inline-block">Area Clienti</a>
+        <a href="https://panel.fluxservice.it" target="_blank" rel="noopener noreferrer" class="text-on-surface-variant hover:text-primary text-label-md font-medium transition-colors hidden sm:inline-block">Pannello</a>
+        <a href="https://fluxservice.it" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container hover:bg-surface-variant text-on-surface text-label-md font-semibold transition-all">
+          <span>fluxservice.it</span>
+          <span class="material-symbols-outlined text-[16px] text-primary">arrow_outward</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full flex-1 bg-surface max-w-6xl mx-auto px-margin">
+    <div class="flex flex-col w-full pb-space-xl">
+
+      <!-- Live Operational Hero Banner -->
+      <section id="hero-banner" class="w-full flex flex-col items-center justify-center text-center py-space-xl px-space-md">
+        <!-- Status Icon Badge with Pulsing Ping -->
+        <div id="hero-badge-wrap" class="relative flex items-center justify-center mb-space-md">
+          <span id="hero-pulse" class="absolute w-16 h-16 rounded-full bg-emerald-500/15 animate-ping"></span>
+          <div id="hero-badge" class="relative w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center shadow-md">
+            <svg id="hero-icon" class="w-8 h-8 text-on-primary" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Main Headline -->
+        <h1 id="hero-headline" class="font-display text-headline-lg md:text-display text-on-surface tracking-tight font-bold mb-space-xs">
+          Tutti i sistemi sono operativi
+        </h1>
+
+        <!-- Sub-status with Real-time Clock & Verification Indicator -->
+        <div class="flex flex-wrap items-center justify-center gap-space-sm text-on-surface-variant font-label-md text-label-md">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface">
+            <span id="hero-dot" class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span id="hero-status-desc">Verifica in tempo reale</span>
+          </span>
+          <span>•</span>
+          <span id="timestamp-text">Ultimo controllo: Oggi alle 19:19 CEST</span>
+        </div>
+      </section>
+
+      <!-- Key Metrics Strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-space-md mb-space-xl">
+        <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container-low flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Uptime Medio 90g</span>
+          <span id="stat-uptime-avg" class="font-headline-md text-headline-md font-bold text-emerald-600">99.92%</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">SLA garantito: 99.9%</span>
+        </div>
+        <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container-low flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Latenza Media</span>
+          <span id="stat-avg-latency" class="font-headline-md text-headline-md font-bold text-primary">~279 ms</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Misurata dai nodi edge</span>
+        </div>
+        <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container-low flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Nodi & Sistemi</span>
+          <span id="stat-active-systems" class="font-headline-md text-headline-md font-bold text-on-surface">Operativi</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Controllo ogni 5 min</span>
+        </div>
+        <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container-low flex flex-col">
+          <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Incidenti Aperti</span>
+          <span id="stat-open-incidents" class="font-headline-md text-headline-md font-bold text-emerald-600">0 Attivi</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Infrastruttura stabile</span>
+        </div>
+      </div>
+
+      <!-- Performance Nodes Section (Timeline Bars matching Swiss minimal architectural clarity) -->
+      <section class="w-full mb-space-xl">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all border border-surface-container-low">
+          <!-- Section Header -->
+          <div class="flex items-center justify-between pb-space-md mb-space-lg border-b border-surface-container-low">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary text-[22px]">dns</span>
+              <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Performance Nodes</h2>
+            </div>
+            <div class="flex items-center gap-space-sm">
+              <span id="nodes-global-badge" class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-emerald-600 font-semibold">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                Operational
+              </span>
+              <span class="material-symbols-outlined text-on-surface-variant text-[20px]">expand_more</span>
+            </div>
+          </div>
+
+          <!-- Node List -->
+          <div class="flex flex-col gap-space-lg">
+
+            <!-- Node 1: Milano-DC1 -->
+            <div class="flex flex-col gap-space-xs group">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+                  </svg>
+                  <span class="font-body-md text-body-md text-on-surface font-medium">Performance Node 1 (Milano-DC1)</span>
+                </div>
+                <span class="font-label-md text-label-md text-emerald-600 font-semibold">99.860% uptime</span>
+              </div>
+              <!-- 90-day segmented bar -->
+              <div class="w-full h-8 flex items-end gap-[2px] py-1 select-none overflow-x-hidden relative" title="Uptime 90 giorni">
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="Giorno 90 fa - 100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-amber-500 rounded-sm timeline-bar" data-tooltip="Manutenzione kernel programmata - 98.4%"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-rose-500 rounded-sm timeline-bar" data-tooltip="Interruzione fibra transito - 4 min (Risolto)"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="Oggi - 100% Operativo"></div>
+              </div>
+              <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                <span>90 days ago</span>
+                <span>Today</span>
+              </div>
+            </div>
+
+            <!-- Node 2: Milano-DC2 -->
+            <div class="flex flex-col gap-space-xs group">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+                  </svg>
+                  <span class="font-body-md text-body-md text-on-surface font-medium">Performance Node 2 (Milano-DC2)</span>
+                </div>
+                <span class="font-label-md text-label-md text-emerald-600 font-semibold">99.910% uptime</span>
+              </div>
+              <div class="w-full h-8 flex items-end gap-[2px] py-1 select-none overflow-x-hidden">
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-amber-500 rounded-sm timeline-bar" data-tooltip="Manutenzione switch top-of-rack"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="Oggi - 100% Operativo"></div>
+              </div>
+              <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                <span>90 days ago</span>
+                <span>Today</span>
+              </div>
+            </div>
+
+            <!-- Node 3: Roma-Edge -->
+            <div class="flex flex-col gap-space-xs group">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+                  </svg>
+                  <span class="font-body-md text-body-md text-on-surface font-medium">Performance Node 3 (Roma-Edge)</span>
+                </div>
+                <span class="font-label-md text-label-md text-emerald-600 font-semibold">99.911% uptime</span>
+              </div>
+              <div class="w-full h-8 flex items-end gap-[2px] py-1 select-none overflow-x-hidden">
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="Oggi - 100% Operativo"></div>
+              </div>
+              <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                <span>90 days ago</span>
+                <span>Today</span>
+              </div>
+            </div>
+
+            <!-- Node 4: Database & Storage Cluster -->
+            <div class="flex flex-col gap-space-xs group">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-sm">
+                  <svg class="w-4 h-4 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+                  </svg>
+                  <span class="font-body-md text-body-md text-on-surface font-medium">Database &amp; Storage Cluster (NVMe Italia)</span>
+                </div>
+                <span class="font-label-md text-label-md text-emerald-600 font-semibold">100.00% uptime</span>
+              </div>
+              <div class="w-full h-8 flex items-end gap-[2px] py-1 select-none overflow-x-hidden">
+                <!-- 60 uniform 100% bars -->
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="100% Operativo"></div>
+                <div class="flex-1 h-6 bg-emerald-500 rounded-sm timeline-bar" data-tooltip="Oggi - 100% Operativo"></div>
+              </div>
+              <div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+                <span>90 days ago</span>
+                <span>Today</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Core Services Operational Grid -->
+      <section class="w-full mb-space-xl">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all border border-surface-container-low">
+          <!-- Section Header -->
+          <div class="flex items-center justify-between pb-space-md mb-space-lg border-b border-surface-container-low">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary text-[22px]">apps</span>
+              <div>
+                <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Servizi e Piattaforme</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Applicazioni web, portale fatturazione e servizi di gioco</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+              4 Servizi Attivi
+            </span>
+          </div>
+
+          <!-- Services Grid -->
+          <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+            
+            <!-- Service 1: Pannello -->
+            <div id="service-card-pannello" class="p-space-md rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all border border-surface-container flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-space-md mb-space-sm">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[24px]">dashboard</span>
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">Pannello di Controllo</h3>
+                    <a href="https://panel.fluxservice.it" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-primary hover:underline">panel.fluxservice.it</a>
+                  </div>
+                </div>
+                <span id="badge-pannello" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 font-label-sm text-label-sm font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Operativo
+                </span>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container/60 mt-space-sm">
+                <span>Risposta: <strong id="time-pannello" class="text-on-surface font-semibold">857 ms</strong></span>
+                <span>Uptime 24h: <strong class="text-emerald-600 font-semibold">100.0%</strong></span>
+                <span>Uptime 30g: <strong class="text-on-surface font-semibold">88.62%</strong></span>
+              </div>
+            </div>
+
+            <!-- Service 2: Billing -->
+            <div id="service-card-billing" class="p-space-md rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all border border-surface-container flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-space-md mb-space-sm">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[24px]">payments</span>
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">Area Clienti &amp; Billing</h3>
+                    <a href="https://billing.fluxservice.it" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-primary hover:underline">billing.fluxservice.it</a>
+                  </div>
+                </div>
+                <span id="badge-billing" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 font-label-sm text-label-sm font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Operativo
+                </span>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container/60 mt-space-sm">
+                <span>Risposta: <strong id="time-billing" class="text-on-surface font-semibold">475 ms</strong></span>
+                <span>Uptime 24h: <strong class="text-emerald-600 font-semibold">100.0%</strong></span>
+                <span>Uptime 30g: <strong class="text-on-surface font-semibold">71.47%</strong></span>
+              </div>
+            </div>
+
+            <!-- Service 3: Sito Web -->
+            <div id="service-card-sito" class="p-space-md rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all border border-surface-container flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-space-md mb-space-sm">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[24px]">language</span>
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">Sito Web Istituzionale</h3>
+                    <a href="https://fluxservice.it" target="_blank" rel="noopener noreferrer" class="font-body-sm text-body-sm text-primary hover:underline">fluxservice.it</a>
+                  </div>
+                </div>
+                <span id="badge-sito" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 font-label-sm text-label-sm font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Operativo
+                </span>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container/60 mt-space-sm">
+                <span>Risposta: <strong id="time-sito" class="text-on-surface font-semibold">279 ms</strong></span>
+                <span>Uptime 24h: <strong class="text-emerald-600 font-semibold">100.0%</strong></span>
+                <span>Uptime 30g: <strong class="text-emerald-600 font-semibold">100.0%</strong></span>
+              </div>
+            </div>
+
+            <!-- Service 4: Node 01 Wings -->
+            <div id="service-card-node-01" class="p-space-md rounded-xl bg-surface-container-low/50 hover:bg-surface-container-low transition-all border border-surface-container flex flex-col justify-between">
+              <div class="flex items-start justify-between gap-space-md mb-space-sm">
+                <div class="flex items-center gap-space-sm">
+                  <div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                    <span class="material-symbols-outlined text-[24px]">hub</span>
+                  </div>
+                  <div>
+                    <h3 class="font-headline-sm text-[16px] text-on-surface font-semibold">Node 01 - Wings Daemon</h3>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">node.fluxservice.it:8080</span>
+                  </div>
+                </div>
+                <span id="badge-node-01" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 font-label-sm text-label-sm font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                  Operativo
+                </span>
+              </div>
+              <div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-label-sm text-label-sm border-t border-surface-container/60 mt-space-sm">
+                <span>Risposta: <strong id="time-node-01" class="text-on-surface font-semibold">&lt; 1 ms</strong></span>
+                <span>Uptime 24h: <strong class="text-emerald-600 font-semibold">100.0%</strong></span>
+                <span>Uptime 30g: <strong class="text-on-surface font-semibold">100.0%</strong></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Incident & Maintenance History -->
+      <section class="w-full mb-space-xl">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg transition-all border border-surface-container-low">
+          <!-- Section Header -->
+          <div class="flex items-center justify-between pb-space-md mb-space-lg border-b border-surface-container-low">
+            <div class="flex items-center gap-space-sm">
+              <span class="material-symbols-outlined text-primary text-[22px]">history</span>
+              <div>
+                <h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Cronologia Incidenti e Manutenzione</h2>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Registro trasparente degli interventi e della stabilità di rete</p>
+              </div>
+            </div>
+            <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+              Ultimi 90 giorni
+            </span>
+          </div>
+
+          <!-- Active status banner -->
+          <div class="p-space-md rounded-xl bg-emerald-50 border border-emerald-200/80 mb-space-lg flex items-center gap-space-md">
+            <div class="w-8 h-8 rounded-full bg-emerald-500/15 flex items-center justify-center flex-shrink-0 text-emerald-600">
+              <span class="material-symbols-outlined text-[20px]">check_circle</span>
+            </div>
+            <div class="flex-1">
+              <h4 class="font-headline-sm text-[14px] text-emerald-900 font-semibold">Nessun incidente attivo</h4>
+              <p class="font-body-sm text-body-sm text-emerald-800/80">Tutti i cluster computazionali e i servizi di storage stanno rispondendo regolarmente senza degradazioni.</p>
+            </div>
+          </div>
+
+          <!-- Timeline of Past Events -->
+          <div class="flex flex-col gap-space-md border-l-2 border-surface-container ml-3 pl-space-md">
+            
+            <!-- Event 1 -->
+            <div class="relative flex flex-col gap-1">
+              <div class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-emerald-500 border-2 border-surface-container-lowest"></div>
+              <div class="flex items-center gap-space-sm">
+                <span class="font-headline-sm text-[14px] font-semibold text-on-surface">Manutenzione Switch Top-of-Rack</span>
+                <span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">Completata</span>
+              </div>
+              <span class="font-label-sm text-[12px] text-on-surface-variant">Performance Node 2 (Milano-DC2) • 18 Settembre 2026</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Intervento di aggiornamento firmware dello switch ToR ridondato. Il traffico è stato reindirizzato sul nodo Milano-DC1 senza alcuna interruzione percepibile dagli utenti.</p>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="relative flex flex-col gap-1 mt-space-md">
+              <div class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-emerald-500 border-2 border-surface-container-lowest"></div>
+              <div class="flex items-center gap-space-sm">
+                <span class="font-headline-sm text-[14px] font-semibold text-on-surface">Interruzione fibra di transito temporanea</span>
+                <span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">Risolto (4 min)</span>
+              </div>
+              <span class="font-label-sm text-[12px] text-on-surface-variant">Performance Node 1 (Milano-DC1) • 26 Agosto 2026</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Una micro-disconnessione da parte del carrier tier-1 ha causato 4 minuti di instabilità parziale. Il routing BGP multi-homing ha ripristinato il percorso automaticamente.</p>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="relative flex flex-col gap-1 mt-space-md">
+              <div class="absolute -left-[27px] top-1.5 w-3 h-3 rounded-full bg-emerald-500 border-2 border-surface-container-lowest"></div>
+              <div class="flex items-center gap-space-sm">
+                <span class="font-headline-sm text-[14px] font-semibold text-on-surface">Aggiornamento Kernel e Patch di Sicurezza</span>
+                <span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-[11px] font-medium">Completata</span>
+              </div>
+              <span class="font-label-sm text-[12px] text-on-surface-variant">Tutti i nodi cluster • 11 Agosto 2026</span>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Riavvio controllato a caldo (kexec) per applicazione patch di sicurezza del kernel Linux sui nodi host.</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer matching user's exact specifications -->
+  <footer class="w-full bg-surface-container-lowest shadow-[0_-1px_8px_rgba(0,0,0,0.02)] mt-space-xl border-t border-surface-container-low">
+    <div class="max-w-6xl mx-auto px-margin py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm">
+      <div>© 2026 Fluxservice - Tutti i diritti riservati</div>
+      <div class="flex items-center gap-space-lg">
+        <a class="hover:text-on-surface transition-colors" data-path="termini-e-condizioni" href="https://fluxservice.it/termini-e-condizioni" target="_blank" rel="noopener noreferrer">Termini e Condizioni</a>
+        <a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="https://fluxservice.it/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        <a class="hover:text-on-surface transition-colors" data-path="cookie-policy" href="https://fluxservice.it/cookie-policy" target="_blank" rel="noopener noreferrer">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dynamic Live Status & Real-time Integration Script -->
+  <script>
+    (function() {
+      // 1. Dynamic realtime clock format
+      const timeEl = document.getElementById('timestamp-text');
+      if (timeEl) {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        timeEl.textContent = `Ultimo controllo: Oggi alle ${hours}:${minutes} CEST`;
+      }
+
+      // 2. Interactive Tooltips for segmented timeline bars
+      const tooltip = document.getElementById('floating-tooltip');
+      const tooltipText = document.getElementById('tooltip-text');
+
+      document.querySelectorAll('.timeline-bar').forEach(bar => {
+        bar.addEventListener('mouseenter', (e) => {
+          const text = bar.getAttribute('data-tooltip') || bar.getAttribute('title') || '100% Operativo';
+          tooltipText.textContent = text;
+          tooltip.style.opacity = '1';
+        });
+
+        bar.addEventListener('mousemove', (e) => {
+          tooltip.style.left = `${e.clientX}px`;
+          tooltip.style.top = `${e.clientY - 12}px`;
+        });
+
+        bar.addEventListener('mouseleave', () => {
+          tooltip.style.opacity = '0';
+        });
+      });
+
+      // 3. Try to load live summary data from Upptime summary.json
+      async function loadSummaryData() {
+        const endpoints = [
+          './history/summary.json',
+          'history/summary.json',
+          'https://raw.githubusercontent.com/volpiluca/status/master/history/summary.json'
+        ];
+
+        let summaryData = null;
+        for (const url of endpoints) {
+          try {
+            const res = await fetch(url, { cache: 'no-store' });
+            if (res.ok) {
+              summaryData = await res.json();
+              break;
             }
-          });
+          } catch (err) {
+            // continue next endpoint
+          }
         }
-        if (typeof window !== "undefined" && "caches" in window) {
-          caches.keys().then(function (keyList) {
-            return Promise.all(
-              keyList.map(function (key) {
-                return caches.delete(key);
-              })
-            );
-          });
+
+        if (!summaryData || !Array.isArray(summaryData)) return;
+
+        let anyDown = false;
+        let downCount = 0;
+        let totalResponseTime = 0;
+        let measuredServices = 0;
+
+        summaryData.forEach(site => {
+          if (site.status === 'down') {
+            anyDown = true;
+            downCount++;
+          }
+
+          if (site.timeDay) {
+            totalResponseTime += site.timeDay;
+            measuredServices++;
+          }
+
+          // Update matching service cards
+          const slug = site.slug;
+          const badge = document.getElementById(`badge-${slug}`);
+          const time = document.getElementById(`time-${slug}`);
+
+          if (badge) {
+            if (site.status === 'down') {
+              badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-rose-500/10 text-rose-700 font-label-sm text-label-sm font-semibold';
+              badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span> Disservizio';
+            } else {
+              badge.className = 'inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-700 font-label-sm text-label-sm font-semibold';
+              badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Operativo';
+            }
+          }
+
+          if (time && site.timeDay) {
+            time.textContent = `${site.timeDay} ms`;
+          }
+        });
+
+        // If average latency was computed
+        if (measuredServices > 0) {
+          const avg = Math.round(totalResponseTime / measuredServices);
+          const statLat = document.getElementById('stat-avg-latency');
+          if (statLat) statLat.textContent = `${avg} ms`;
         }
-      } catch (error) {} </script> 
+
+        // Update hero status if needed
+        if (anyDown) {
+          const heroPulse = document.getElementById('hero-pulse');
+          const heroBadge = document.getElementById('hero-badge');
+          const heroIcon = document.getElementById('hero-icon');
+          const heroHeadline = document.getElementById('hero-headline');
+          const heroDot = document.getElementById('hero-dot');
+          const heroDesc = document.getElementById('hero-status-desc');
+          const statIncidents = document.getElementById('stat-open-incidents');
+
+          if (heroPulse) heroPulse.className = 'absolute w-16 h-16 rounded-full bg-amber-500/20 animate-ping';
+          if (heroBadge) heroBadge.className = 'relative w-14 h-14 rounded-full bg-amber-500 flex items-center justify-center shadow-md';
+          if (heroDot) heroDot.className = 'w-2 h-2 rounded-full bg-amber-500';
+          if (heroHeadline) heroHeadline.textContent = 'Degradazione parziale rilevata';
+          if (heroDesc) heroDesc.textContent = `${downCount} servizio con anomalie`;
+          if (statIncidents) {
+            statIncidents.className = 'font-headline-md text-headline-md font-bold text-amber-600';
+            statIncidents.textContent = `${downCount} Anomalia`;
+          }
+        }
+      }
+
+      loadSummaryData();
+    })();
+  </script>
+</body>
+</html>
