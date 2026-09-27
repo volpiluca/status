@@ -27,6 +27,7 @@ concurrency:
 jobs:
   release:
     name: Build
+    if: false # Disabled to prevent overwriting custom status page workflows
     runs-on: ubuntu-latest
     env:
       GH_APP_PRIVATE_KEY: ${{ secrets.GH_APP_PRIVATE_KEY }}

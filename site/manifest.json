@@ -1,0 +1,21 @@
+{
+  "name": "FluxService Status",
+  "short_name": "FluxStatus",
+  "description": "Stato operativo in tempo reale dei servizi e server di FluxService",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ff",
+  "theme_color": "#003ba4",
+  "icons": [
+    {
+      "src": "https://i.ibb.co/S4DKZGpN/Flux-Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.ibb.co/S4DKZGpN/Flux-Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

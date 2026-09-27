@@ -87,17 +87,19 @@ jobs:
           command: "graphs"
         env:
           GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-      - name: Generate site
-        uses: upptime/uptime-monitor@v1.44.1
-        with:
-          command: "site"
-        env:
-          GH_PAT: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
+      - name: Prepare site directory
+        run: |
+          mkdir -p dist
+          cp -r site/* dist/
+          mkdir -p dist/history
+          cp -r history/* dist/history/ || true
+          mkdir -p dist/api
+          cp -r api/* dist/api/ || true
       - uses: peaceiris/actions-gh-pages@v4
         name: GitHub Pages Deploy
         with:
           github_token: ${{ steps.app_token.outputs.token || secrets.GH_PAT || github.token }}
-          publish_dir: "site/status-page/__sapper__/export/"
+          publish_dir: "dist/"
           force_orphan: "false"
           user_name: "Upptime Bot"
           user_email: "73812536+upptime-bot@users.noreply.github.com"
