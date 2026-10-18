@@ -1,7 +1,7 @@
 url: https://panel.fluxservice.it
-status: up
-code: 200
-responseTime: 911
-lastUpdated: 2026-10-17T00:57:23.924Z
+status: down
+code: 522
+responseTime: 65
+lastUpdated: 2026-10-18T00:33:06.741Z
 startTime: 2026-07-22T14:40:24.617Z
 generator: Upptime <https://github.com/upptime/upptime>
